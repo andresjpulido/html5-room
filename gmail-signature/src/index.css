@@ -1,0 +1,71 @@
+:root {
+    --primary: rgb(53,121,233);
+    --secundary: rgba(40, 45, 49, 0.9);
+    --level3: rgba(40, 45, 49, 0.6);
+}
+
+.signature {
+    display: flex; 
+}
+
+.signature div {
+    padding: 1rem;
+}
+
+.signature div:first-child {
+    padding: 1rem;
+}
+
+span::after { content: '\A'; white-space: pre;}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.h1 , .h2, .p {
+    font-family:"Segoe UI","Helvetica Neue","Roboto","Helvetica","Arial","Tahoma","Verdana","sans-serif";
+}
+
+.p {
+    font-family: Verdana, sans-serif;
+    color: var(--secundary);
+    font-size: .75rem;
+}
+
+.h1 {   
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+    opacity: 0.9;
+}
+
+.h2 {
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--primary);
+    opacity: 0.9;
+}
+ 
+ul.networks {
+    margin: 0px;
+    margin-top: .3rem;
+    padding: 0px;
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    margin-right: 1rem; 
+}
+
+svg {
+    color: var(--primary);
+    font-size: 1.3333333333em;
+    line-height: 0.75em;
+    width: .8em;
+    height: .8em;
+    opacity: 0.8;
+}

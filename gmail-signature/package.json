@@ -1,0 +1,16 @@
+{
+  "name": "gmail-signature",
+  "version": "1.0.0",
+  "description": "html signature for gmail",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres Pulido",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-inline-css": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
