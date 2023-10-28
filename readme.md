@@ -1,7 +1,6 @@
 # Introduction
 - Add your project logo.
-- This is a repository with my tests, changelles, ideas, and sessions working with HTML, vanilla JavaScript and CSS. This is my study room
-- If you are using badges, add them here.
+- HTML5 Room is where your web development journey takes flight. Whether you're looking for coding challenges, insightful tutorials, or a supportive community of fellow developers, you'll find it all here. Join me in exploring the ever-expanding horizons of HTML5, JavaScript, and CSS. Together, we'll shape the future of the web, one line of code at a time.
 
 ## :ledger: Index
 
@@ -26,7 +25,7 @@
 - [License](#lock-license)
 
 ##  :beginner: About
-List of HTML5 projects.
+HTML5 Room is my brainchild, a web enthusiast, and lifelong learner. This website serves as my personal laboratory where I delve into the ever-evolving world of HTML5, JavaScript, and CSS. My mission is simple: to document my coding adventures, share valuable insights, and inspire fellow developers to push their boundaries.
 
 ## :zap: Usage
 Write about how to use this project.
@@ -151,4 +150,4 @@ Pictures of your project.
 Credit the authors here.
 
 ##  :lock: License
-Add a license here, or a link to it.
+MIT.
