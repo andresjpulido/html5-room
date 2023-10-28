@@ -1,0 +1,38 @@
+{
+  "name": "html5-room",
+  "version": "1.0.0",
+  "description": "- Add your project logo. - This is a repository with my tests, changelles, ideas, and sessions working with HTML, vanilla JavaScript and CSS. This is my study room - If you are using badges, add them here.",
+  "type": "module",
+  "homepage": "https://html5-room/andresjpulido.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresjpulido/html5-room.git"
+  },
+  "license": "MIT",
+  "author": "Andres Pulido",
+  "bugs": {
+    "url": "https://github.com/andresjpulido/html5-room/issues"
+  },
+  "keywords": [
+    "frontend",
+    "html5",
+    "dev-server",
+    "build-tool",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "host": "vite --host"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "vite": "^4.4.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  }
+}
