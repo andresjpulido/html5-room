@@ -25,7 +25,7 @@
 - [License](#lock-license)
 
 ##  :beginner: About
-HTML5 Room is my brainchild, a web enthusiast, and lifelong learner. This website serves as my personal laboratory where I delve into the ever-evolving world of HTML5, JavaScript, and CSS. My mission is simple: to document my coding adventures, share valuable insights, and inspire fellow developers to push their boundaries.
+HTML5 Room is my brainchild, a web enthusiast, and a lifelong learner. This website serves as my personal laboratory where I delve into the ever-evolving world of HTML5, JavaScript, and CSS. My mission is simple: to document my coding adventures, share valuable insights, and inspire fellow developers to push their boundaries.
 
 ## :zap: Usage
 Write about how to use this project.

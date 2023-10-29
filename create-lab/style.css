@@ -1,0 +1,273 @@
+:root {
+  --one: #d8f57a;
+  --two: #498df2;
+  --three: #0044a8;
+  --four: #f27261;
+  --five: #a63f32;
+  --six: #fff;
+  --seven:  #f2726147;
+  ;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--four);
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: var(--three);
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 1rem;
+  color: var(--three);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+ul.menu {
+  display: flex;
+  justify-items: right;
+}
+
+input[type="button"] {
+  background-color: var(--four);
+  color: var(--six);
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  border: var(--six) solid 0.1px;
+  margin-top: 1rem;
+}
+
+input[type="text"]{
+    background-color: var(--seven);
+    border: .1rem var(--seven) solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+textarea{
+    background-color: var(--seven);
+    border: .1rem var(--seven) solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+section {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--four);
+  color: var(--six);
+}
+
+p {
+  color: var(--three);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+svg {
+  margin: 2rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+h1 span span {
+  position: relative;
+  opacity: 0;
+  bottom: -1em;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--four);
+}
+
+h1 span span:nth-child(1) {
+  animation: 1s linear 0.2s move-text forwards;
+}
+h1 span span:nth-child(2) {
+  animation: 1s linear 0.4s move-text forwards;
+}
+h1 span span:nth-child(3) {
+  animation: 1s linear 0.6s move-text forwards;
+}
+h1 span span:nth-child(4) {
+  animation: 1s linear 0.8s move-text forwards;
+}
+h1 span span:nth-child(5) {
+  animation: 1s linear 1s move-text forwards;
+}
+h1 span span:nth-child(6) {
+  animation: 1s linear 1.2s move-text forwards;
+}
+h1 span span:nth-child(7) {
+  animation: 1s linear 1.4s move-text forwards;
+}
+h1 span span:nth-child(8) {
+  animation: 1s linear 1.6s move-text forwards;
+}
+h1 span span:nth-child(9) {
+  animation: 1s linear 1.8s move-text forwards;
+}
+h1 span span:nth-child(10) {
+  animation: 1s linear 2s move-text forwards;
+}
+h1 span span:nth-child(11) {
+  animation: 1s linear 2.2s move-text forwards;
+}
+
+@keyframes move-text {
+  0% {
+    bottom: -1em;
+    opacity: 1;
+  }
+  50% {
+    bottom: 1em;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem; 
+}
+
+form div{
+    margin-bottom: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--three);
+}
+
+.menu-item {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--three);
+  margin-left: 0.5rem;
+  padding: 1rem;
+}
+
+.menu-item:hover {
+  color: var(--six);
+  background-color: var(--four);
+}
+
+.menu-item-active {
+  color: var(--four);
+}
+
+.services {
+  display: flex;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.services1 > div {
+  flex: 1;
+}
+
+.services p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.services-item {
+  padding: 0.5rem;
+  border: var(--four) solid 0.1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 1rem);
+}
+
+path,
+circle,
+line {
+  stroke: var(--four);
+  stroke-width: 1.5;
+}
+
+.services-item:hover {
+  color: var(--six);
+  background-color: var(--four);
+}
+
+.services-item:hover path,
+.services-item:hover circle {
+  fill: none;
+  stroke: var(--six);
+}
+
+.row {
+  display: flex;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.col {
+  width: calc(50% - 1rem);
+}
+
+.col-3{
+    width: 20%;
+}
+
+.col-7{
+    width: 65%;
+}
+
+
+.footer-title {
+  color: var(--six);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.footer-items {
+  font-size: 0.8rem;
+}
+
+.copy {
+  font-size: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+}

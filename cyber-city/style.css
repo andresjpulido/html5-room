@@ -17,6 +17,10 @@
 
   --color-button-primary: #9b9898;
   --color-button-secondary: #dddddd;
+
+  --s: 15rem; /* size  */
+  --m: 2px; /* margin */
+  --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px);
 }
 
 body {
@@ -39,6 +43,13 @@ body {
   z-index: -1;
 }
 
+.h2 {
+  background: cornflowerblue;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  clip-path: polygon(0 0, 70% 0%, 60% 100%, 0% 100%);
+}
+
 .header {
   padding: 2rem;
   color: var(--color-bg-primary);
@@ -58,11 +69,25 @@ body {
   text-decoration: none;
   padding: 1rem;
   border: 0.1rem solid transparent;
-  border-radius:    5px;
+  border-radius: 5px;
 }
 
 .nav-a:hover {
-  border: 0.1rem var(--color-bg-primary) solid; 
+  border: 0.1rem var(--color-bg-primary) solid;
+}
+
+.p {
+  padding: 0 0 1rem 0;
+}
+
+.section-home {
+  height: calc(100vh - 3rem);
+}
+
+.section-Leaders,
+.section-robots,
+.section-community {
+  padding: 1rem 3rem 3rem 3rem;
 }
 
 .section-login {
@@ -74,6 +99,40 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   backdrop-filter: blur(10px);
+}
+
+.section-community {
+  position: relative;
+}
+
+.section-community-background {
+  position: absolute;
+  top: 5rem;
+  z-index: -1;
+  font-size: 0; 
+}
+ 
+.section-community-background div {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s) * 1.1547);
+  display: inline-block;
+  font-size: initial;
+  background: rgb(197, 238, 253);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+}
+
+.section-community-background::before { 
+  content: "";
+  width: calc(var(--s) / 2 + var(--m));
+  float: left;
+  height: 120rem;
+  shape-outside: repeating-linear-gradient(
+    #0000 0 calc(var(--f) - 3px),
+    #000 0 var(--f)
+  );
+  z-index: -1;
 }
 
 .form-login {
@@ -107,8 +166,8 @@ body {
   width: 100%;
 }
 
-.form-button:hover{
-    cursor: pointer;
+.form-button:hover {
+  cursor: pointer;
 }
 
 .form-comment {
@@ -172,8 +231,33 @@ body {
   text-decoration: none;
 }
 
-.form-icon{
-    fill: var(--color-bg-primary);
-    position: absolute;
-    right: .1rem;
+.form-icon {
+  fill: var(--color-bg-primary);
+  position: absolute;
+  right: 0.1rem;
+}
+
+.text-selection-disable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.robots-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.robots-gallery-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.robots-gallery-photo {
+  max-width: 250px;
 }
