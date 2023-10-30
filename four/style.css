@@ -1,0 +1,116 @@
+@import "reset.css";
+@import "variables.css";
+@import "fonts.css";
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+.showcase {
+  position: relative;
+}
+
+.bg-image {
+  opacity: 0.9;
+}
+
+.bg-img-title {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+}
+
+.side {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  display: flex;
+  color: white;
+}
+
+.signature {
+  font-family: "dancing";
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.label {
+  font-family: "arial";
+  font-size: 1rem;
+  font-weight: bolder;
+  border-top: 0.1rem white solid;
+  padding-top: 1rem;
+  line-height: 16px;
+}
+
+.ly0 {
+  z-index: 0;
+}
+
+.ly1 {
+  z-index: 1;
+  position: absolute;
+}
+
+.ly2 {
+  z-index: 2;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.c1 {
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 2rem;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.c2 {
+  background-color: var(--secundary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 15rem;
+}
+
+.c3 {
+  background-color: var(--tertiary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 15rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.c4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: .5rem;
+  left: 0rem;
+   
+}

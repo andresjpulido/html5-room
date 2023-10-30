@@ -24,7 +24,7 @@ body {
 }
 
 .h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 2rem 0 2rem 0;
 }
 
@@ -33,7 +33,7 @@ body {
   line-height: 1.5rem;
 }
 .article {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .projects {
@@ -181,6 +181,26 @@ body {
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.footer {
+  background-color: var(--color-bg-tertiary);
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.ul-social-networks {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ul-social-networks li svg{
+fill: var(--color-bg-primary);
+width: 2rem;
+height: 2rem;
 }
 
 @media only screen and (min-width: 600px) {

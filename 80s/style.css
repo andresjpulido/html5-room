@@ -1,0 +1,102 @@
+:root {
+  --one-bgcolor: #fdb531;
+  --two-bgcolor: #f56054;
+  --three-bgcolor: #474C87;
+  --test: white;
+}
+
+section {
+  padding: 10vh 0;
+}
+
+.one {
+  background-color: var(--one-bgcolor);
+  position: relative;
+}
+
+.one_icon {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.one::before,
+.one::after {
+  background-color: var(--one-bgcolor);
+  bottom: -5px;
+  content: " "; 
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  z-index: 1;
+}
+.one::before {
+  margin-left: calc(50% - 50px);
+  transform: skew(0, 20deg);
+}
+
+.one::after {
+  margin-left: calc(50%);
+  transform: skew(0, -20deg);
+}
+
+section.two {
+  background-color: var(--two-bgcolor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+}
+
+section.three{
+  background-color: var(  --three-bgcolor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10vw;
+}
+
+#dog {
+  width: 150px;
+  height: 200px;
+  clip-path: circle();
+}
+
+#stormtrooper{
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.title {
+  text-align: center;
+}
+
+section.three{
+  height: 20rem;
+}
+
+section.four{
+  background-image: url(Elephants_Trunk_nebula.jpg);
+  background-size: contain;
+  height: 50vh;
+  position: relative;
+}
+
+section.four::before{
+  background-image: url(jumping.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  content: '';
+  position: absolute;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  width: 100%;
+}

@@ -151,3 +151,7 @@ Credit the authors here.
 
 ##  :lock: License
 MIT.
+
+
+npm install eslint -D
+npm init @eslint/config

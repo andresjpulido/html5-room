@@ -1,0 +1,67 @@
+@font-face {
+	font-family: "acme";
+	src: local("acme"),
+		url("../fonts/Acme-Regular.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "oswald";
+	src: local("oswald"),
+		url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "patuaone";
+	src: local("patuaone"),
+		url("../fonts/PatuaOne-Regular.ttf") format("truetype");
+	font-weight: bold;
+}
+
+
+
+@font-face {
+	font-family: "montserrat-m";
+	src: local("nunitosb"),
+		url("../fonts/Montserrat-Medium.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "montserrat-sb";
+	src: local("nunito"),
+		url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "montserrat-eb";
+	src: local("nunito"),
+		url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+	font-weight: bold;
+}
+ 
+@font-face {
+	font-family: "dosis";
+	src: local("nunito"),
+		url("../fonts/MerriweatherSans-VariableFont_wght.ttf") format("truetype");
+	font-weight: bold;
+}
+
+
+@font-face {
+	font-family: "Righteous";
+	src: local("nunito"),
+		url("../fonts/Righteous-Regular.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "coolvetica";
+	src: local("nunito"),
+		url("../fonts/coolvetica rg.ttf") format("truetype");
+	font-weight: bold;
+}
+
+

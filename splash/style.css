@@ -1,0 +1,25 @@
+body{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+section{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+section::before{
+    background-image: url("splash.jpg");
+    background-position: center;
+    content: ' ';
+    height: 100%;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+}

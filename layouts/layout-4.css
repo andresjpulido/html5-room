@@ -1,0 +1,66 @@
+:root {
+  --gap: 1rem;
+  --border-color: green;
+  --bg-color: #dbe2e2;
+  --fg-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: var(--gap);
+}
+
+[class^="block-"] {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  height: calc((100vh - 2rem * 2 - 2rem * 2) / 3);
+}
+
+[class^="box-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--fg-color);
+}
+
+.box-1 {
+  flex-basis: 100%;
+}
+
+.box-2,
+.box-5 {
+  flex-basis: 70%;
+}
+
+.box-3,
+.box-4 {
+  flex-basis: 30%;
+}
+
+@media (max-width: 767px) {
+  [class^="block-"] {
+    flex-direction: column;
+  }
+  .block-2 {
+    height: calc((100vh * 2) / 3);
+  }
+  .block-3 {
+    flex-direction: row;
+  }
+
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5 {
+    flex-basis: 50%;
+  }
+}

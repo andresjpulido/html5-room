@@ -1,0 +1,42 @@
+:root {
+  --gap: 1rem;
+  --border-color: green;
+  --bg-color: #dbe2e2;
+  --fg-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  padding: 2rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  [class^="block-"] {
+    height: calc(100vh - 2rem * 2);
+  }
+}
+
+[class^="block-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid var(--border-color);
+  height: calc(100vh - 2rem * 3);
+}
+
+.block-1 {
+  flex-grow: 2;
+}
+
+.block-2 {
+  flex-grow: 8;
+}

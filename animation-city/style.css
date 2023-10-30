@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+}
+
+#surface {
+  fill: #e6e6e6;
+}
+
+.crater {
+  fill: #cbcbcb;
+}
+
+.star {
+  fill: #e6e6e6;
+  animation: 5s infinite alternate star-a;
+}
+
+@keyframes star-a {
+  0% {
+    fill: #e6e6e6;
+  }
+  75% {
+    fill: #92b2e8;
+  }
+  100% {
+    fill: #e6e6e6;
+  }
+}
+
+.meteor2 {
+  fill: url(#b13d5aa8-7d59-4aa5-8b0c-a1087af90b05-30);
+  fill: url(#b216fe78-eea0-4fe3-b1f5-9d415c27bb0d-31);
+}
+
+.meteor {
+  animation: 5s infinite alternate meteor-a;
+}
+
+@keyframes meteor-a {
+  0% {
+    fill: url(#header-shape-gradient);
+  }
+  75% {
+    fill: none;
+  }
+  76% {
+    fill: url(#header-shape-gradient);
+  }
+  100% {
+    fill: url(#header-shape-gradient);
+  }
+}
+
+#header-shape-gradient {
+  --color-stop: #fff;
+  --color-bot: rgb(106, 80, 80);
+}
+
+.tree {
+  fill: #2f2e41;
+  animation: 5s infinite alternate tree-a;
+}
+
+@keyframes tree-a {
+  0% {
+    fill: #2f2e41;
+  }
+  75% {
+    fill: #2a943b;
+  }
+
+  100% {
+    fill: #2f2e41;
+  }
+}
+
+.sky {
+  fill: #3f3d56;
+  animation: 5s infinite alternate sky-a;
+}
+
+@keyframes sky-a {
+  0% {
+    fill: #3f3d56;
+  }
+  75% {
+    fill: #92b2e8;
+  }
+  100% {
+    fill: #3f3d56;
+  }
+}
